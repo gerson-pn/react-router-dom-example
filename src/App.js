@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}>
-          <Route index element={<List />} />
-          <Route index element={<People />} />
+          <Route path="/list" element={<List />} />
+          <Route path="/people" element={<People />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
@@ -19,3 +19,4 @@ function App() {
 }
 
 export default App;
+
